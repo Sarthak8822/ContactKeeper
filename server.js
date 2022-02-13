@@ -1,6 +1,11 @@
 const express = require('express');
+const connectDB = require('./config/db')
 
 const app = express();
+
+//Connect Database
+connectDB();
+
 
 //Endpoint hits by this 👇
 app.get('/', (req,res) => 
